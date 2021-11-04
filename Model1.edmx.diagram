@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75e92929aacb45c3973b1afb24044843" Name="Diagram1">
+        <EntityTypeShape EntityType="jlsModel.Acesso" Width="1.5" PointX="7.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Bairro" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Cidade" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Cliente" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.EntradaProdutoRegistro" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Fornecedor" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Funcao" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Funcionario" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.OrcamentoRegistro" Width="1.5" PointX="10.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.PedidoRegistro" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Produto" Width="1.5" PointX="10.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.TipoFornecedor" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.TipoPagamento" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.Unidade" Width="1.5" PointX="8.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.VendaRegistro" Width="1.5" PointX="7.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.EntradaProdutoDetalhe" Width="1.5" PointX="9.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.OrcamentoDetalhe" Width="1.5" PointX="12.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="jlsModel.VendaDetalhe" Width="1.5" PointX="12.75" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="jlsModel.FK_Acesso_Funcionario" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Bairro_Cidade" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Cliente_Bairro" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Fornecedor_Bairro" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Funcionario_Bairro" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_VendaRegistro_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_EntradaProdutoDetalhe_EntradaProduto" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_EntradaProdutoRegistro_Fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Fornecedor_TipoFornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_PedidoRegistro_Fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Produto_Fornecedor" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Funcionario_Funcao" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_VendaRegistro_Funcionario" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_OrcamentoDetalhe_OrcamentoRegistro" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_EntradaProdutoDetalhe_Produto" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_OrcamentoDetalhe_Produto" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_Produto_Unidade" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_VendaDetalhe_Produto" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_VendaRegistro_TipoPagamento" ManuallyRouted="false" />
+        <AssociationConnector Association="jlsModel.FK_VendaDetalhe_VendaRegistro" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
